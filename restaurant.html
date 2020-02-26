@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>开一家餐厅吧</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <p id="cash">餐厅现金&nbsp;<span>0</span></p>
+        <div id="seatButton">
+            <button id="addSeat" value="">增加座位</button>
+            <button id="reduceSeat" value="">减少座位</button>    
+        </div>
+        <div id="cookButton">
+            <button id="addCook" value="">增加厨师</button>
+            <button id="reduceCook" value="">减少厨师</button>    
+        </div>
+        <div id="waiterButton">
+            <button id="addWaiter" value="">增加服务员</button>
+            <button id="reduceWaiter" value="">减少服务员</button>    
+        </div>        
+    </header>
+
+    <main>
+        <div id="cooks">
+            <ul class="cooklist">
+            <!--    
+                <li id="cook1">
+                    <img src="image/cook.jpg">
+                    <p class="rest">空闲中</p>
+                    <div class="busy">
+                        <p class="doing">正在做：<span></span></p>
+                        <p class="time">还差<span></span>个时间单位做完</p>
+                    </div>
+                </li>  -->
+            </ul>
+            <div class="menu">
+                <p>待做的菜：</p>
+                <ul></ul>
+            </div>
+        </div>
+
+        <div id="waiters">
+            <!--<img id="waiter1" class="waiter" src="image/waiter.jpg"> -->
+        </div>
+
+        <ul id="seats">
+            <!--
+            <li>    
+                <img class="seat" src="image/table.jpg" id="seat1">
+                <div class="customer" id="sunny">
+                    <img src="image/customer.gif">
+                    <p class="ordering"><span class="customer"></span>入座，正在点菜，还剩<span class="time"></span>个时间单位点好</p>
+                    <div class="menu">
+                        <p><span></span><span></span></p>
+                        <ul></ul>
+                    </div>     
+                </div>
+            </li>
+             -->
+        </ul>
+
+        <div id="customerQueue">
+            <p>等待就餐的顾客：</p>
+            <ul></ul>       
+        </div>    
+    </main>
+
+    
+    <script src="base.js"></script>
+    <script src="cuisine.js"></script>
+    <script src="observer.js"></script>
+    <script src="seat.js"></script>
+    <script src="waiter.js"></script>
+    <script src="cook.js"></script>  
+    
+    <script src="customer.js"></script>
+    <script src="restaurant.js"></script>
+    <script src="execute.js"></script>
+
+</body>
+</html>

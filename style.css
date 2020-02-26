@@ -1,0 +1,106 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	position: relative;
+	font-size: 12px;	
+}
+ul{
+	list-style-type: none;
+}
+button{
+	display: block;
+	margin-bottom:10px;
+}
+header:after,#seats li:after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+#cash,#seatButton,#cookButton,#waiterButton{
+	float:left;
+}
+#cash{
+	width:100px;
+	margin:10px 50px 10px 400px;
+}
+#seatButton,#cookButton,#waiterButton{
+	margin:10px;
+}
+main{
+	display: flex;
+}
+#cooks{
+    
+	width:350px;
+}
+#cooks .cooklist{
+	float:left;
+    width:250px;
+}
+#cooks .cooklist li:after{
+	content: "";
+	display: block;
+	clear:both;
+}
+#cooks .cooklist img{
+	width:50%;
+	float:left;
+}
+#cooks .menu{
+	float:left;
+	width:100px;
+}
+#cooks .rest{
+    display: block;
+}
+
+#waiters{
+	width: 120px;
+}
+#waiters img{
+	width:8%;
+	position:absolute;
+	top:83px;
+	left:350px;	
+}
+
+#seats{
+	width:550px;
+}
+
+#seats .seat{
+	float:left;
+    width:30%;
+}
+#seats .customer{
+	float:left;
+	width:70%;
+}
+#seats .customer img{
+	float:left;
+	width:42%;
+}
+#seats .customer .ordering, #seats .customer .menu{
+    float:left;
+}
+#seats .customer .ordering{
+    width:58%;
+}
+
+#customerQueue{
+    width:200px;
+}
+
+@keyframes toCook{
+	from{ left:570px; top:83px; }
+	to{ left:350px; top:83px; }
+}
+
+@keyframes toCustomer{
+	from { left:350px; top:83px; }
+	to { left:570px; top:83px; }
+}
+
